@@ -1,0 +1,24 @@
+<?php include('./view/header.php'); ?>
+<div id="content">
+<body>
+	
+	<h1>AJAX Tutorial Demo</h1>
+	<p>Click on one of the links below to populate the info-box with data from a remote script (ajax.php)</p>
+	
+	<ul>
+		<li><a class="ajax_link" href="#1">Ahmet Arsan</a></li>
+		<li><a class="ajax_link" href="#2">Rick Astley</a></li>
+		<!-- <li><a class="ajax_link" href="#3">Person 3</a></li> -->
+	</ul>
+	
+	<h2>Results:</h2>
+
+	<div id="data_box">
+		<!-- <em>No AJAX call performed yet.</em> -->
+	</div>
+
+	<script src="/scripts/ajax.js"></script>
+</body>
+</div>
+</html>
+<?php include('./view/footer.php'); ?>

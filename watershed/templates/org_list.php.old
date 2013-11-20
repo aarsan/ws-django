@@ -1,0 +1,20 @@
+<?php include './view/header.php'; ?>
+<div id="main">
+	<h1>Org List</h1>
+	<div id="sidebar">
+			<!-- display list of Orgs -->
+			<h2>Orgs:</h2>
+			<ul class="nav">
+			<?php foreach ($orgs as $org) : ?>
+				<li>
+					<a href="?action=view_org_details">
+					<?php echo $org['org_name']; ?>
+					</a>
+				</li>
+			<?php endforeach; ?>
+			</ul>
+			<p>Click on Org name to view Org details</p>
+	</div>
+	<p><a href="?action=show_org_add_form">Create new Org</a></p>
+</div>
+<?php include './view/footer.php'; ?>
