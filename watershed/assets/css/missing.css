@@ -1,0 +1,132 @@
+/*
+Default CSS file for Watershed
+Media:screen
+Author: Nick Gardner
+
+Table of Contents
+*****************
+		1.Reset
+		2.Structure
+		3.Images
+		4.Colors and Typography
+
+*/
+
+/*1. Reset
+-----------------------------------------------------
+html, body, div, span,
+applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dd, dl, dt, li, ol, ul,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+	{
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	vertical-align: baseline;
+	}
+a img, :link img, :visited img
+	{
+	border: 0;
+	}
+table
+	{
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+.content ul li
+	{	
+	margin: 0 0 0.4em 0;
+	padding: 0 0 0 18px;
+	list-style: none;
+	background: transparent url(images/bullet.png) 0px 5px no-repeat;
+	text-decoration: none;
+	}
+
+blockquote:before, blockquote:after
+	{
+	content: "";
+	}
+
+/**/
+
+/*2. Structure
+-----------------------------------------------------*/
+body {
+height: 700px;
+
+}
+
+.inner {
+width: 930px;
+height: 550px;
+margin-top: 50px;
+margin-bottom: 50px;
+margin-right: auto;
+margin-left: auto;
+overflow: hidden;
+}
+
+
+
+/**/
+
+
+/*3. Images
+-----------------------------------------------------*/
+.outer {
+background: url(images/bg-missing.png);
+background-position: center-top;
+background-repeat: no-repeat;
+
+}
+
+
+
+/**/
+
+
+/*4. Colors & Typography
+-----------------------------------------------------*/
+body {
+background-color: #dddddd;
+color: #333333;
+font-family: helvetica, sans-serif;
+font-style: bold;
+font-weight: 700;
+text-align: center;
+
+}
+
+.inner h1 {
+font-size: 1.1em;
+letter-spacing: 3px;
+margin-bottom: 50px;
+margin-top: 150px;
+
+}
+
+.inner h2 a {
+color: #ffffff;
+text-decoration: none;
+font-size: .8em;
+
+}
+
+.inner h2 a:hover {
+color: #eeeeee;
+text-decoration: none;
+
+}
+
+/**/

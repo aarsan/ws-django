@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Watershed</title>
+        <link rel="stylesheet" href="/assets/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
+        <script LANGUAGE="JavaScript" SRC="/assets/js/register_password_validate.js"></script>
+        <script LANGUAGE="JavaScript" SRC="/assets/js/jquery-1.7.1.js"></script>
+        <script LANGUAGE="JavaScript" SRC="/assets/js/bootstrap.js"></script>
+        <script type="text/javascript">
+        	$('.dropdown-toggle').dropdown()
+        </script>
+        <script type="text/javascript">
+                var _gaq = _gaq || [];
+                _gaq.push(['_setAccount', 'UA-28304116-1']);
+                _gaq.push(['_setDomainName', 'citycorner.org']);
+                _gaq.push(['_trackPageview']);
+
+                (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                })();
+        </script>
+    </head>
+    <body>
+    <div id="page">
+        <div id="header">
+            <div id="topmenu">
+	            <div class="logo"><img src="/assets/img/ws-logotop.png" alt="WATERSHED"/></div> 
+	            <div class="main">
+	                BETA&nbsp;&nbsp;&nbsp;
+	            </div>
+	            <div class="profile">
+	            	<div class="btn-group">
+						  <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#">
+						  	<i class="icon-user icon-white"></i>&nbsp;&nbsp;Hi, <?php echo $_SESSION['nick_name']; ?>!
+						    <b class="caret"></b>
+						  </a>
+						  <ul class="dropdown-menu">
+						  		<?php echo $dashboard; ?>
+						        <?php echo $switchgroup; ?>
+						        <?php echo $group; ?>
+							    <li><a href="/profiles/<?php echo $_SESSION['member_ID']; ?>"><i class="icon-user"></i>&nbsp;&nbsp;Edit Profile</a></li>
+							    <li><a href="/settings/"><i class="icon-cog"></i>&nbsp;&nbsp;Settings</a></li>
+							    	<li class="divider"></li>
+		                		<li><a href="/logout/">Sign Out</a></li>
+						  </ul>
+					</div>
+			    </div>
+		    </div>
+        </div>
+        
+        <div id="mainwrap">
+        
+<nav id="side-nav">
+            <div class="arrow"><img src="/assets/img/top-arrow-nobg.png" alt=""/></div> 
+
+        	
+	<aside id="sidebar">
+		<nav id="primary">
+			
+		   </br>
+		   </br>
+           <div class="side-nav-waves"><img src="/assets/img/waves-white.png" alt="……………"/></div> 
+		
+		<nav id="primary">
+			<ul>
+				<li>
+					<a href="/profiles/<?php echo $_SESSION['member_ID']; ?>">My Profile</a>
+				</li>
+				<li>
+					<a href="/groups/">My Groups</a>
+				</li>
+			</ul>
+		</nav>
+				
+		<div class="side-nav-waves"><img src="/assets/img/waves-white.png" alt="……………"/></div> 
+
+				<nav id="secondary">
+			<ul>
+				<li>
+					<a target="_blank" href="/about/">About Watershed</a>
+				</li>
+				<li>
+					<a target="_blank" href="http://blog.watershedapp.com">Watershed Blog</a>
+				</li>
+				<li>
+				<a href="/feedback/">Leave Us Feedback&nbsp;&nbsp;&nbsp;<i class="icon-comment icon-white"></i></a>
+				</li>
+				<li>
+				<a target="_blank" href="/contact/">Contact</a>
+				</li>
+
+			</ul>
+		</nav>
+
+	</aside>
+</nav>
+
+
+<!-- Begin Footer -->
+    </div> <!--#mainwrap--> 
+    
+        <div id="footer">
+        	<div id="footer-inner">
+				<p class="logo">
+					<a href="/">
+					<img src="/assets/img/ws-logo-footer.png" alt="Watershed"></a>
+					Share &#43;  Stay Square
+					</p><br/>
+									
+				<ul id="footer-nav">
+					<li>
+						<a id="f-home" target="_blank" href="/about/">About</a>
+					</li>
+					<li>
+						<a target="_blank" href="/faq/">FAQ</a>
+					</li>
+					<li>
+						<a target="_blank" href="/contact/">Contact</a>
+					</li>
+					<li>
+						<a target="_blank" href="https://twitter.com/#!/watershedapp">Twitter</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://blog.watershedapp.com">Blog</a>
+					</li>
+					<li>
+						<a target="_blank" href="/testimonials/">Testimonials</a>
+					</li>
+					
+					<li>
+						<a target="_blank" href="/terms/">Terms</a>
+					</li>
+					<li>
+						<a target="_blank" href="/privacy/">Privacy</a>
+					</li>
+
+				</ul>
+				
+					<p>Copyright &copy; 2011-{% now "SHORT_DATETIME_FORMAT" %}Progger, LLC.   &#124;   Version (0.9.4.22)  &#124;  Handcrafted in Brooklyn, NY</p>
+		</div>
+	</div>
+
+        </div>
+    </div>
+    </body>
+</html>

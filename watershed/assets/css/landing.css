@@ -1,0 +1,512 @@
+/*****************************************************
+
+Default CSS file for Watershedapp.com  Landing Page
+Media:screen
+Author: Nick Gardner
+
+
+needed?:
+  - IE specific stylesheet (tweaks.css)
+  - print stylesheet (print.css)
+  - Add as required
+
+Table of contents
+-----------------------------------------------------
+  1.    Constants (Reference only)
+  2.    Structure
+  3.    Colors & Typography                  
+  4.    IE Hacks
+
+
+
+1. Constants
+-----------------------------------------------------
+  Colors
+  -------------------------------------------------
+  #ebebe4 = Color (main background color)
+  #333333 = Color (text color)
+  
+  0 2px 0 rgba(255,255,255,.5); = depth/color/opacity (text shadow)
+  
+  #ad5250 = red
+  #88765c = brown
+  #ededed = off-white
+  #779969 = green
+  #7e9e90 = light green
+  #749cc5 = light blue
+  #749cc5 = blue
+
+
+  
+  Font sizes
+  -------------------------------------------------
+  h1 1.8em
+  h2 1.25em
+  h3 .8em
+  h4
+  h5
+  footer
+
+*/
+
+
+
+/* 2. Content
+-----------------------------------------------------
+*/
+
+body {
+    color: #563c13;
+    background: #ebebe4;
+}
+
+.outer {background-image: url(../images/bgfloater-ws.png);
+        background-repeat: repeat-x;
+        background-position: center;
+}
+
+
+
+.wrap {
+    width: 810px;
+    margin: 0 auto;
+}
+
+.iphone {
+    padding-top: 10px;
+    width: 281px;
+    float: left;
+    position:relative;
+}
+
+.content {
+    float:left;
+    margin-left: 10px;
+    position: relative;
+    width: 509px;
+}
+.content .watershed-title {
+    position: absolute;
+    width: 70%; /*280 x 56*/
+    top: 140px;
+    left: 120px; /*120px to include icon*/
+    
+}
+
+.content .watershed-icon {
+    position: absolute;
+    width: 19.5%; /*83 x 63*/
+    top: 110px;
+    left: 29px;
+    z-index:0;
+}
+
+
+.content .tab {
+    margin-top: 210px;
+    height: 380px;
+    background: url(../images/bg-content.png) 0 0 no-repeat;
+    padding: 30px 6% 0 7%;
+    width: 86%;
+}
+
+.content .tab-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+}
+
+.tab-content img.meet-instagram {
+    margin-bottom: 1em;
+}
+
+#iphone-overlay {
+    position:absolute;
+    top:107px;
+    left:22px;
+}
+
+.platform-badge-container {
+  position:absolute;
+}
+
+.platform-badge {
+  margin-right:20px;
+}
+
+/****************************************FOOTER*/
+
+#footer {
+display: block;
+clear: both;
+width: auto;
+margin: 0 0 0 0; 
+border-top-style:inset;
+border-top-color: #333;
+border-top-width: 1px;
+font-family: "Helvetica", "Arial", sans-serif;
+background-color: white;
+}
+
+#footer-inner {
+  width: 540px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  font-size: .71em;
+  color: #999999;
+  background-color: #ffffff;  
+}
+
+#footer a {
+  font-weight: bold;
+  color: #777777;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: #749cc5;
+}
+
+#footer li.footer-gopro a:hover {
+  color: #ff8833;
+}
+
+#footer p {
+  clear: left;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+#footer p.logo {
+  font-size: 15px;
+  line-height: 1.8;
+  clear:both;
+  margin-left: -4px;
+}
+
+#footer p.logo a img {
+  float: left;
+  margin: 0 10px 0 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+}
+
+#footer p.logo a:hover img {
+  opacity: .8;
+}
+
+#footer ul#footer-nav {
+  float: left;
+  width:540px;
+  margin: 3px 0 10px 0;
+  padding-left: 0px;
+}
+
+#footer-nav li {
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+  line-height: 1;
+  border-right: 1px solid #ccc;
+  list-style: none;
+}
+
+#footer-nav li:last-child {
+  margin: 0;
+  padding: 0;
+  border-right: none;
+}
+
+/*END FOOTER*/
+
+fieldset {
+	border: none;
+	padding: 0 0  10px 0;
+	margin: 0 0 0 0;
+	list-style-type:none;
+	list-style-image: none;
+	color: #ad5250; /*alt-#BD4A39;*/
+	}
+
+#content form input {
+	border-size: 2px;
+	list-style: none;
+	padding: 5px;
+	/*
+	-moz-box-shadow: 0 .5px 2px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(0, 0, 0, 0.15);
+	
+	box-shadow: 0 .5px 2px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(0, 0, 0, 0.15); */
+	font-family: "museo-sans", "Helvetica", sans-serif;
+	width: 215px;
+	margin-top: 0;
+}
+
+.email {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.email:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.email:active {
+	position:relative;
+	top:1px;
+}
+
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+.button {
+  background: #ededed;
+  color: #333;
+  text-align: center;
+  margin: 10px 0 0 6px;
+  padding: 0 0 0 0;
+  text-shadow: 0 1px 0 rgba(255,255,255,.3);
+  font-size: .7em;
+  -webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;   
+	height:28px;
+	width: 50px;
+	border-color: #999;
+	border-width: 1px;
+  }
+
+.button:hover {
+opacity:.7;
+color: #000;
+background-color:#dcdcdc;
+  }
+
+
+#menu-nav {
+	height: 40px;
+	text-align: center;
+	margin: 10px 0 0 142px;
+	width: 600px;
+	padding-top: 0px;
+	}
+
+ul#menunav {
+	position:absolute;
+	width: 600px;
+	height:40px;
+	margin: 0;
+	padding: 0;
+	background: transparent url(../images/navsprite.png) no-repeat 0 0;
+	}
+ul#menunav li {
+	padding:0;
+	margin:0;
+	display:block;
+	float:left;
+	text-indent:-9999px;	
+	}
+ul#menunav li a {
+	border:0;
+	display:block;
+	text-decoration:none;
+	background: transparent url(../images/navsprite.png) no-repeat;
+	transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: linear;
+	}
+
+/* Dimensions of menu items */
+li#menunav-blog a {
+	width:102px;
+	height:40px;
+	}
+li#menunav-press a {
+	width:109px;
+	height:40px;
+	}
+li#menunav-contact a {
+	width:160px;
+	height:40px;
+	}	 
+li#menunav-spacer {
+	width:110px;
+	height:40px;
+	}
+li#menunav-twitter a {
+	width:59px;
+	height:40px;
+	}
+li#menunav-facebook a {
+	width:54px;
+	height:40px;
+	}
+
+/* BLOG */
+li#menunav-blog a:link, li#menunav-blog a:visited {	
+	background-position: 0 0;
+	}
+li#menunav-blog a:hover, li#menunav-blog a:focus {
+	background-position: 0 -40px;
+	}
+/* PRESS */
+li#menunav-press a:link, li#menunav-press a:visited {	
+	background-position: -103px 0;
+	}
+li#menunav-press a:hover, li#menunav-press a:focus {	
+	background-position: -103px -40px;
+	}
+/* CONTACT */
+li#menunav-contact a:link, li#menunav-contact a:visited {	
+	background-position: -213px 0;
+	}
+li#menunav-contact a:hover, li#menunav-contact a:focus {	
+	background-position: -213px -40px;
+	}
+/* SPACER */
+li#menunav-spacer a:link, li#menunav-spacer a:visited {	
+	background-position: -374px 0;
+	}
+li#menunav-spacer a:hover, li#menunav-spacer a:focus {	
+	background-position: -374px -40px;
+	}
+/* TWITTER */
+li#menunav-twitter a:link, li#menunav-twitter a:visited {	
+	background-position: -486px 0;
+	}
+li#menunav-twitter a:hover, li#menunav-twitter a:focus {	
+	background-position: -486px -40px;
+	}
+/* FACEBOOK */
+li#menunav-facebook a:link, li#menunav-facebook a:visited {	
+	background-position: -546px 0;
+	}
+li#menunav-facebook a:hover, li#menunav-facebook a:focus {	
+	background-position: -546px -40px;
+	}
+
+/**/
+
+/*LOGIN*/
+#login {
+position: absolute;
+margin-top: -33px;
+margin-left: 760px;
+width: auto;
+height: 20px;
+font-size: .7em;
+}
+
+
+.alert {
+   display:none;
+   position:absolute;
+   top:1px;
+   left:1px;
+   width:300px;
+   background-color:white;
+   border-style:solid;
+   border-width:1px;
+   padding:15px 20px 5px 20px;
+}
+
+.registerlink{
+	color:#ad5250; 
+	margin-left:12px; 
+	margin-top:0; 
+	font-size:1.3em;
+}
+
+#register-content{
+	width: 700px;
+	display: block;
+	float: left;
+	margin: 65px 0 65px 474px;
+	color:#333;
+}
+
+/**/
+
+
+/* 2. Colors & Typography
+-----------------------------------------------------
+*/
+
+body {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    color: #563c13;
+    font-size: 100%;
+    text-shadow: 0 1px 0 rgba(255,255,255,.9);
+
+}
+h1,h2,h3,h4,h5 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #BD4A39;
+}
+h2 {
+    font-size: 1.25em;
+    color: #666;
+}
+h3 {
+  font-size: .8em;
+  font-weight:bold;
+}
+
+a {
+    text-decoration: none;
+    color: #BD4A39;
+    -webkit-transition: color .1s ease-out;
+    font-size: inherit;
+}
+a:hover {
+    color: #f35f49;
+}
+
+.content p {
+    font-size: 1em;
+    margin: 1em 0;
+    line-height: 1.25em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.7);
+}
+
+/**/
+
+/* 4. IE7 hacks
+--------------------------------------------- */
+
+*:first-child+html .group,
+*:first-child+html #wrap {
+    min-height: 1px;
+    }
+
+/**/
