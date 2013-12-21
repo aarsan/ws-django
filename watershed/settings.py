@@ -85,5 +85,5 @@ USE_TZ = True
 STATIC_URL = '/assets/'
 
 STATICFILES_DIRS = (
-'/home/aarsan/projects/watershed/watershed/assets/',
+    os.path.join(BASE_DIR, "watershed/assets"),
 )
